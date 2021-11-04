@@ -1,4 +1,13 @@
 class Api::V1::UsersController < ApplicationController
+
+  def show
+    user = User.find(params[:id])
+    if user
+      render json: UserSerializer.new(user), status: 200
+    end
+
+  end
+
   def create
     user = User.new(user_params)
     if user.save

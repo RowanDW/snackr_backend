@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :food_entries
       resources :meals
-      resources :users, only: [:create]
+      resources :users, only: [:show,:create]
     end
   end
 end
