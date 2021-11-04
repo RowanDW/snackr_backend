@@ -1,18 +1,11 @@
 language: ruby
 rbenv:
 - 2.7.2
+before_install:
+  - yes | gem update --system --force
+  - gem install bundler -v 2.2.30
 addons:
   postgresql: 9.6
 script:
 - bundle exec rails db:{create,migrate} RAILS_ENV=test
 - bundle exec rspec
-deploy:
-  provider:
-  api_key:
-  app:
-  run: rails db:migrate
-  on:
-    repo: RowanDW/snackr_backend
-    branch: main
-before_install:
-    - gem install bundler
