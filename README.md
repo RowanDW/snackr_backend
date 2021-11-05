@@ -325,8 +325,8 @@ Example JSON response:
 
 
 <!-- Markdown link & img dfn's -->
-[travis-image]:           https://app.travis-ci.com/RowanDW/snackr_frontend.svg?branch=main
-[travis-url]:             https://app.travis-ci.com/github/RowanDW/snackr_frontend
+[travis-image]:           https://app.travis-ci.com/RowanDW/snackr_backend.svg?branch=main
+[travis-url]:             https://app.travis-ci.com/github/RowanDW/snackr_backend
 
 [linkedin-badge]:         https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [github-badge]:           https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
