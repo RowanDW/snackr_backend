@@ -1,4 +1,4 @@
 class FoodEntry < ApplicationRecord
   belongs_to :meal
-  belongs_to :user, through: :meal
+  has_one :user, through: :meal
 end
