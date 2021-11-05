@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :food_entries
-      resources :meals
-      resources :users, only: [:show,:create]
+      # resources :food_entries
+      # resources :meals
+      # resources :users, only: [:show,:create,:login]
+      get '/users', to: 'users#login'
     end
   end
 end
