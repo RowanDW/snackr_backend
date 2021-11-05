@@ -3,7 +3,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       # resources :food_entries
       # resources :meals
-      # resources :users, only: [:show,:create,:login]
+
+      get '/foods/search', to: 'food_search#index'
       get '/users', to: 'users#login'
     end
   end
