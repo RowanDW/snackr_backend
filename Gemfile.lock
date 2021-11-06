@@ -286,6 +286,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
+  faraday
   figaro
   jsonapi-serializer
   launchy
