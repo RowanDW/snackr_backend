@@ -219,20 +219,18 @@ Example JSON response:
 ```
 {
   "data": [
-    {
+    { 
+      "id": "food_98u23mokdjfkbqkjsdfjk",
       "type": "food",
       "attributes": {
-        "name": "Avocado",
-        "food_id": "food_98u23mokdjfkbqkjsdfjk",
-        "brand": "Haas"
+        "name": "Avocado"
       }
     },
     {
+      "id": "food_lkjasdf908uw3rkjbasfkh",
       "type": "food",
       "attributes": {
         "name": "Avocado",
-        "food_id": "food_lkjasdf908uw3rkjbasfkh",
-        "brand": "NotHaas"
       }
     }
   ]
