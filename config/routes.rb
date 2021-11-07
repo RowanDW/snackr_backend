@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
       get '/foods/search', to: 'food_search#index'
       get '/users', to: 'users#login'
+      get '/users/:id/meals', to: 'users#meals'
     end
   end
 end
