@@ -1,0 +1,1144 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.edamam.com/api/food-database/v2/parser?app_id=Private API key&app_key=Private
+      API key&ingr=blueberry
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 07 Nov 2021 00:08:20 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - route=642086aec229c89269c2b2e49b816092; Path=/; SameSite=Strict
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-1-125.ec2.internal/10.0.1.125
+      Vary:
+      - accept-encoding
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 68a177d069fea3315f5007d3250f8de5
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "text" : "blueberry",
+          "parsed" : [ {
+            "food" : {
+              "foodId" : "food_bgkl0cuasoeomtbolalmcauhha54",
+              "label" : "Blueberries",
+              "nutrients" : {
+                "ENERC_KCAL" : 57.0,
+                "PROCNT" : 0.74,
+                "FAT" : 0.33,
+                "CHOCDF" : 14.49,
+                "FIBTG" : 2.4
+              },
+              "category" : "Generic foods",
+              "categoryLabel" : "food",
+              "image" : "https://www.edamam.com/food-img/f55/f55705a2a9ea9f7abf449a05fa968139.png"
+            }
+          } ],
+          "hints" : [ {
+            "food" : {
+              "foodId" : "food_bgkl0cuasoeomtbolalmcauhha54",
+              "label" : "Blueberries",
+              "nutrients" : {
+                "ENERC_KCAL" : 57.0,
+                "PROCNT" : 0.74,
+                "FAT" : 0.33,
+                "CHOCDF" : 14.49,
+                "FIBTG" : 2.4
+              },
+              "category" : "Generic foods",
+              "categoryLabel" : "food",
+              "image" : "https://www.edamam.com/food-img/f55/f55705a2a9ea9f7abf449a05fa968139.png"
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_unit",
+              "label" : "Whole",
+              "weight" : 1.36
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 74.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_berry",
+              "label" : "Berry",
+              "weight" : 1.36
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+              "label" : "Cup",
+              "weight" : 148.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_bgkl0cuasoeomtbolalmcauhha54",
+              "label" : "Fresh Blueberries",
+              "nutrients" : {
+                "ENERC_KCAL" : 57.0,
+                "PROCNT" : 0.74,
+                "FAT" : 0.33,
+                "CHOCDF" : 14.49,
+                "FIBTG" : 2.4
+              },
+              "category" : "Generic foods",
+              "categoryLabel" : "food",
+              "image" : "https://www.edamam.com/food-img/f55/f55705a2a9ea9f7abf449a05fa968139.png"
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_unit",
+              "label" : "Whole",
+              "weight" : 1.36
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 74.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_berry",
+              "label" : "Berry",
+              "weight" : 1.36
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+              "label" : "Cup",
+              "weight" : 148.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_ak4h5qvalldqebbchjyluaaxooum",
+              "label" : "Wild Blueberries",
+              "nutrients" : {
+                "ENERC_KCAL" : 57.0,
+                "PROCNT" : 0.0,
+                "FAT" : 0.16,
+                "CHOCDF" : 13.85,
+                "FIBTG" : 4.4
+              },
+              "category" : "Generic foods",
+              "categoryLabel" : "food",
+              "image" : "https://www.edamam.com/food-img/af0/af072a0ccd59285c7b0ff94b9d32c113.jpg"
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 70.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+              "label" : "Cup",
+              "weight" : 140.0,
+              "qualified" : [ {
+                "qualifiers" : [ {
+                  "uri" : "http://www.edamam.com/ontologies/edamam.owl#LanguaL_J0136",
+                  "label" : "PRESERVED BY FREEZING"
+                } ],
+                "weight" : 140.0
+              } ]
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_bvm2etya23ofyjaybm9knbkkgbdz",
+              "label" : "Blueberries - Blueberries",
+              "nutrients" : {
+                "ENERC_KCAL" : 33.814022701843,
+                "PROCNT" : 0.845350567546075,
+                "FAT" : 0.0,
+                "CHOCDF" : 9.298856243006824,
+                "FIBTG" : 1.69070113509215
+              },
+              "brand" : "Blueberries",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "Blueberries",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+                "label" : "Cup",
+                "quantity" : 0.5
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 118.29411825
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+              "label" : "Cup",
+              "weight" : 236.5882365
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_atki2i8bgth2vibigo3jhb71inuz",
+              "label" : "Sunvale Blueberries Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 50.0,
+                "PROCNT" : 0.0,
+                "FAT" : 0.7142857142857143,
+                "CHOCDF" : 12.142857142857142,
+                "FIBTG" : 2.857142857142857
+              },
+              "brand" : "SunVale",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "BLUEBERRIES.",
+              "image" : "https://www.edamam.com/food-img/963/9633e24decdc42ed674fdc787623b492.png",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 140.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+                "label" : "Cup",
+                "quantity" : 1.0
+              } ],
+              "servingsPerContainer" : 12.0
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 140.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_package",
+              "label" : "Package",
+              "weight" : 1680.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+              "label" : "Cup",
+              "weight" : 140.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_a0fosuzadz01jfbnexmbxbqdcwxm",
+              "label" : "Blueberry Kefir, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 71.0,
+                "PROCNT" : 3.3299999237060547,
+                "FAT" : 2.9200000762939453,
+                "CHOCDF" : 7.920000076293945,
+                "FIBTG" : 0.0
+              },
+              "brand" : "Whole Foods Market, Inc.",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "PASTEURIZED WHOLE MILK; BLUEBERRIES; CANE SUGAR; BLUEBERRY JUICE; WATER; NATURAL FLAVOR; NONFAT DRY MILK; PECTIN; GUAR GUM; CARROT JUICE CONCENTRATE (COLOR); BLUEBERRY JUICE CONCENTRATE (COLOR); LIVE & ACTIVE CULTURES (LACTOBACILLUS LACTIS; LACTOBACILLUS ",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+                "label" : "Cup",
+                "quantity" : 1.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_milliliter",
+                "label" : "Milliliter",
+                "quantity" : 240.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 236.5882365
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+              "label" : "Cup",
+              "weight" : 236.5882365
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_milliliter",
+              "label" : "Milliliter",
+              "weight" : 0.9857843187499999
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_bpukgmpaecf09ab6gqqh6a9ph539",
+              "label" : "Blueberry Jam, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 267.0,
+                "PROCNT" : 0.0,
+                "FAT" : 0.0,
+                "CHOCDF" : 63.33000183105469
+              },
+              "brand" : "THE COOPER FAMILY'S",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "SUGAR; BLUEBERRIES; PECTIN; LEMON JUICE.",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+                "label" : "Tablespoon",
+                "quantity" : 1.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 30.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 30.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+              "label" : "Tablespoon",
+              "weight" : 30.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_bm0m1ckbjm9cjea6uxnxqatxm4ih",
+              "label" : "Blueberry Muffin, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 422.0,
+                "PROCNT" : 6.670000076293945,
+                "FAT" : 20.0,
+                "CHOCDF" : 60.0,
+                "FIBTG" : 6.699999809265137
+              },
+              "brand" : "Small Planet Foods, Inc.",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "CASHEWS; DATES; APPLES; BLUEBERRIES; VANILLA EXTRACT.",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_bar",
+                "label" : "Bar",
+                "quantity" : 1.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 45.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 45.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_bar",
+              "label" : "Bar",
+              "weight" : 45.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_ayfkrw4bks9nx4acyr4wrbih14zc",
+              "label" : "Blueberry Preserves, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 250.0,
+                "PROCNT" : 0.0,
+                "FAT" : 0.0,
+                "CHOCDF" : 60.0,
+                "FIBTG" : 0.0
+              },
+              "brand" : "DILLMAN FARM",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "BLUEBERRIES; PURE CANE SUGAR; PECTIN; FRUIT ACID (CITRIC)",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+                "label" : "Tablespoon",
+                "quantity" : 1.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 20.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 20.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+              "label" : "Tablespoon",
+              "weight" : 20.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_bt9uov2aobx4vsa4vmba2akaz33n",
+              "label" : "Blueberry Syrup, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 300.0,
+                "PROCNT" : 0.0,
+                "FAT" : 0.0,
+                "CHOCDF" : 80.0,
+                "FIBTG" : 3.299999952316284
+              },
+              "brand" : "The Kroger Co.",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "ORGANIC BLUEBERRIES; ORGANIC CANE SUGAR; ORGANIC LEMON JUICE.",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+                "label" : "Tablespoon",
+                "quantity" : 2.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_milliliter",
+                "label" : "Milliliter",
+                "quantity" : 30.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 29.573529562
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+              "label" : "Tablespoon",
+              "weight" : 14.786764781
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_milliliter",
+              "label" : "Milliliter",
+              "weight" : 0.9857843187333334
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_ag6sk2kbi4wsi9aw9cnf2a8dp6id",
+              "label" : "Blueberry Muffin, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 345.0,
+                "PROCNT" : 5.309999942779541,
+                "FAT" : 17.700000762939453,
+                "CHOCDF" : 43.36000061035156,
+                "FIBTG" : 0.8999999761581421
+              },
+              "brand" : "Dolly Madison Bakery",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "ENRICHED FLOUR (BLEACHED WHOLE WHEAT FLOUR; WHEAT FLOUR; NIACIN; FERROUS SULFATE; REDUCED IRON; THIAMINE MONONITRATE; RIBOFLAVIN; FOLIC ACID); EGG; SUGAR; VEGETABLE OIL (SOYBEAN; CANOLA); BLUEBERRY; WATER; CORN SYRUP; GLYCERIN; MODIFIED CORNSTARCH; WHEY",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 113.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_muffin",
+                "label" : "Muffin",
+                "quantity" : 1.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 113.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_muffin",
+              "label" : "Muffin",
+              "weight" : 113.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_a4g85j5brkinsza29ajsraux2l4o",
+              "label" : "Blueberry Waffles, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 200.0,
+                "PROCNT" : 2.3499999046325684,
+                "FAT" : 8.239999771118164,
+                "CHOCDF" : 31.760000228881836,
+                "FIBTG" : 1.2000000476837158
+              },
+              "brand" : "KITCHFIX",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "WATER; CASSAVA STARCH (TAPIOCA STARCH); CASSAVA FLOUR; BLUEBERRIES; HIGH OLEIC SUNFLOWER OIL; FLAXSEED MEAL; EGGS; SUNFLOWER LECITHIN; BAKING POWDER (ORGANIC POTATO STARCH; CREAM OF TARTAR; SODIUM BICARBONATE); SEA SALT",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+                "label" : "Waffle",
+                "quantity" : 2.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 85.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 85.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+              "label" : "Waffle",
+              "weight" : 42.5
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_bogxj9wappra2hax21ku9aj0mq7e",
+              "label" : "Blueberry Bagels, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 247.0,
+                "PROCNT" : 8.640000343322754,
+                "FAT" : 1.2300000190734863,
+                "CHOCDF" : 51.849998474121094,
+                "FIBTG" : 3.700000047683716
+              },
+              "brand" : "Meijer, Inc.",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "ENRICHED HIGH GLUTEN FLOUR (WHEAT FLOUR; MALTED BARLEY; NIACIN; REDUCED IRON; THIAMINE MONONITRATE; RIBOFLAVIN; FOLIC ACID); WATER; BLUEBERRY BIT (SUGAR; WHEAT FLOUR; CANOLA OIL; WHEAT STARCH; DEXTROSE; FRUIT JUICE CONCENTRATES (ELDERBERRY JUICE; WATERMEL",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 81.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_bagel",
+                "label" : "Bagel",
+                "quantity" : 1.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 81.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_bagel",
+              "label" : "Bagel",
+              "weight" : 81.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_ajx8s7ua3cla8iad8j1dpbgb47ey",
+              "label" : "Blueberry Waffles, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 314.0,
+                "PROCNT" : 7.139999866485596,
+                "FAT" : 10.0,
+                "CHOCDF" : 45.709999084472656,
+                "FIBTG" : 1.399999976158142
+              },
+              "brand" : "First Street",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "ENRICHED WHEAT FLOUR (WHEAT FLOUR; NIACIN; REDUCED IRON; THIAMIN MONONITRATE [VITAMIN B1]; RIBOFLAVIN [VITAMIN B2]; FOLIC ACID); WHEY; BLUEBERRY FLAVORED NUGGETS (DEXTROSE; SUGAR; WHEAT FLOUR; MODIFIED CORNSTARCH; SOYBEAN OIL; NATURAL FLAVORS; DRIED BLUEB",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+                "label" : "Waffle",
+                "quantity" : 2.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 70.0
+              } ],
+              "servingsPerContainer" : 5.0
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 70.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+              "label" : "Waffle",
+              "weight" : 35.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_package",
+              "label" : "Package",
+              "weight" : 350.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_aqjlf3jbtndp69bwhqh2dbdghabu",
+              "label" : "Blueberry Waffles, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 257.0,
+                "PROCNT" : 5.710000038146973,
+                "FAT" : 8.569999694824219,
+                "CHOCDF" : 41.43000030517578,
+                "FIBTG" : 1.399999976158142
+              },
+              "brand" : "Kellogg's Eggo",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "ENRICHED FLOUR (WHEAT FLOUR; NIACIN; REDUCED IRON; VITAMIN B1 [THIAMIN MONONITRATE]; VITAMIN B2 [RIBOFLAVIN]; FOLIC ACID); WATER; VEGETABLE OIL (SOYBEAN; PALM AND/OR CANOLA); SUGAR; DEXTROSE; EGGS; CONTAINS 2% OR LESS OF LEAVENING (BAKING SODA; SODIUM ALUMINUM PHOSPHATE; MONOCALCIUM PHOSPHATE); WHEAT FLOUR; MODIFIED CORN STARCH; SALT; MALTODEXTRIN; BLACK CARROT JUICE CONCENTRATE FOR COLOR; BLUEBERRY JUICE CONCENTRATE FOR COLOR; NATURAL FLAVORS; BLUEBERRIES; WHEY; SOY LECITHIN. VITAMINS AND MINERALS: CALCIUM CARBONATE; VITAMIN A PALMITATE; REDUCED IRON; VITAMIN B6 (PYRIDOXINE HYDROCHLORIDE); VITAMIN B12.",
+              "image" : "https://www.edamam.com/food-img/636/63625866bebfd4aa1d36a430844b7dee.jpg",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+                "label" : "Waffle",
+                "quantity" : 2.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 70.0
+              } ],
+              "servingsPerContainer" : 5.0
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 70.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+              "label" : "Waffle",
+              "weight" : 35.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_package",
+              "label" : "Package",
+              "weight" : 350.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_b56uu71aq7a8v9bdwdxyjbso2l9l",
+              "label" : "Blueberry Waffles, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 200.0,
+                "PROCNT" : 4.289999961853027,
+                "FAT" : 5.0,
+                "CHOCDF" : 34.290000915527344,
+                "FIBTG" : 0.0
+              },
+              "brand" : "ShurFine",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "ENRICHED FLOUR [ WHEAT FLOUR; MALTED BARLEY FLOUR; NIACIN; IRON; THIAMIN MONONITRATE; RIBOFLAVIN; FOLIC ACID]; WATER; NON FAT MILK; IMITATION BLUEBERRY BITS [ SUGAR; WHEAT FLOUR; WHEAT STARCH; FRUCTOSE; CANOLA OIL; DEXTROSE; CORN SYRUP SOLIDS; NATURAL & ARTIFICIAL FLAVORS; CELLULOSE GUM; BLUE 2 LAKE; GUM ACACIA; RED 40 LAKE; SODIUM ALGINATE AND SODIUM BICARBONATE]; SOYBEAN OIL; WHOLE EGGS; LEAVENING [ SODIUM ACID PYROPHOSPHATE; SODIUM BICARBONATE; MONOCALCIUM PHOSPHATE]; SUGAR; SOY LECITHIN; SALT; CALCIUM CARBONATE; DICALCIUM PHOSPHATE; REDUCED IRON; NIACIN; VITAMIN A PALMITATE; PYRIDOXINE HYDROCHLORIDE; RIBOFLAVIN; THIAMINE MONONITRATE; CYANOCOBALAMIN; NATURAL & ARTIFICIAL BLUEBERRY FLAVOR.",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 70.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+                "label" : "Waffle",
+                "quantity" : 2.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 70.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+              "label" : "Waffle",
+              "weight" : 35.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_a0p5u83btxcj1ba9zip85bcwa9hr",
+              "label" : "Blueberry Bagels, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 266.0,
+                "PROCNT" : 10.640000343322754,
+                "FAT" : 2.130000114440918,
+                "CHOCDF" : 53.189998626708984,
+                "FIBTG" : 2.0999999046325684
+              },
+              "brand" : "Schnuck Markets, Inc.",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "ENRICHED FLOUR (WHEAT FLOUR; MALTED BARLEY FLOUR; NIACIN; REDUCED IRON; THIAMINE MONONITRATE; RIBOFLAVIN; FOLIC ACID); WATER; SUGAR; YEAST; WHEAT GLUTEN; CONTAINS LESS THAN 2% OF EACH OF THE FOLLOWING: DEXTROSE; WHEAT FLOUR; SALT; DEGERMINATED YELLOW CORN MEAL; SOYBEAN OIL; CALCIUM PROPIONATE PRESERVATIVE; GUAR GUM; SODIUM STEAROYL LACTYLATE; MEDIUM CHAIN TRIGLYCERIDES; MONOGLYCERIDES; NATURAL AND ARTIFICIAL FLAVORS; CITRIC ACID PRESERVATIVE; SORBIC ACID PRESERVATIVE; ENZYMES; RED 40 LAKE; HYDROGENATED SOYBEAN OIL; BLUE 2 LAKE; DRIED BLUEBERRIES (BLUEBERRIES; MALTODEXTRIN; CORN STARCH); BLUE 1 LAKE; RED 40; ASCORBIC ACID PRESERVATIVE.",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_bagel",
+                "label" : "Bagel",
+                "quantity" : 1.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 94.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 94.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_bagel",
+              "label" : "Bagel",
+              "weight" : 94.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_broetq1a358zoxb4ls3hlbfbgm44",
+              "label" : "Blueberry Waffles, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 229.0,
+                "PROCNT" : 11.430000305175781,
+                "FAT" : 7.139999866485596,
+                "CHOCDF" : 28.56999969482422,
+                "FIBTG" : 4.300000190734863
+              },
+              "brand" : "Kidfresh",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "WATER; ENRICHED FLOUR (WHEAT FLOUR; NIACIN; IRON; VITAMIN B1 [THIAMINE MONONITRATE]; VITAMIN B2 [RIBOFLAVIN]; FOLIC ACID); EGG; WHOLE WHEAT FLOUR; BLUEBERRIES; CANOLA OIL; SUGAR; MILK PROTEIN CONCENTRATE; WHEAT PROTEIN; CORN FIBER; SUNFLOWER LECITHIN; BAK",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 70.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+                "label" : "Waffle",
+                "quantity" : 2.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 70.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+              "label" : "Waffle",
+              "weight" : 35.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_bxc34uybchoao5afv8v81b6xulvg",
+              "label" : "Blueberry Waffles, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 257.0,
+                "PROCNT" : 5.710000038146973,
+                "FAT" : 8.569999694824219,
+                "CHOCDF" : 41.43000030517578,
+                "FIBTG" : 1.399999976158142
+              },
+              "brand" : "The Kellogg Company",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "ENRICHED FLOUR (WHEAT FLOUR; NIACIN; REDUCED IRON; VITAMIN B1 [THIAMIN MONONITRATE]; VITAMIN B2 [RIBOFLAVIN]; FOLIC ACID); WATER; VEGETABLE OIL (SOYBEAN; PALM AND/OR CANOLA); SUGAR; DEXTROSE; EGGS; CONTAINS 2% OR LESS OF LEAVENING (BAKING SODA; SODIUM ALUMINUM PHOSPHATE; MONOCALCIUM PHOSPHATE); WHEAT FLOUR; MODIFIED CORN STARCH; SALT; MALTODEXTRIN; BLACK CARROT JUICE CONCENTRATE FOR COLOR; BLUEBERRY JUICE CONCENTRATE FOR COLOR; NATURAL FLAVORS; BLUEBERRIES; WHEY; SOY LECITHIN. VITAMINS AND MINERALS: CALCIUM CARBONATE; VITAMIN A PALMITATE; REDUCED IRON; VITAMIN B6 (PYRIDOXINE HYDROCHLORIDE); VITAMIN B12.",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 70.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+                "label" : "Waffle",
+                "quantity" : 2.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 70.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+              "label" : "Waffle",
+              "weight" : 35.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_bxy4u4ia0cety6aauawfmaxug2q0",
+              "label" : "Blueberry Waffles, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 314.0,
+                "PROCNT" : 7.139999866485596,
+                "FAT" : 10.0,
+                "CHOCDF" : 45.709999084472656,
+                "FIBTG" : 1.399999976158142
+              },
+              "brand" : "Festive Finer Foods",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "ENRICHED WHEAT FLOUR (WHEAT FLOUR; NIACIN; REDUCED IRON; THIAMIN MONONITRATE [VITAMIN B1]; RIBOFLAVIN [VITAMIN B2]; FOLIC ACID) WHEY; BLUEBERRY FLAVORED NUGGETS (DEXTROSE; SUGAR; WHEAT FLOUR; MODIFIED CORNSTARCH; SOYBEAN OIL; NATURAL FLAVORS; DRIED BLUEBERRIES; CELLULOSE GUM; CITRIC ACID; MALTODEXTRIN; BLUE 2 LAKE; RED 40 LAKE); VEGETABLE OIL (CANOLA AND/OR SOYBEAN OIL); SUGAR; CONTAINS 2% OR LESS OF: LEAVENING (SODIUM ACID PYROPHOSPHATE; SODIUM BICARBONATE); SOY LECITHIN (EMULSIFIER); EGGS; CALCIUM CARBONATE; SALT; NATURAL AND ARTIFICIAL FLAVOR; REDUCED IRON; NIACINAMIDE; VITAMIN A PALMITATE; RIBOFLAVIN (VITAMIN B2); PYRIDOXINE HYDROCHLORIDE (VITAMIN B6); THIAMIN MONONITRATE (VITAMIN B1); VITAMIN B12.",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 70.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+                "label" : "Waffle",
+                "quantity" : 2.0
+              } ]
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 70.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+              "label" : "Waffle",
+              "weight" : 35.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          }, {
+            "food" : {
+              "foodId" : "food_bddj2dya323oz5ah04zq7bwx30ir",
+              "label" : "Blueberry Waffles, Blueberry",
+              "nutrients" : {
+                "ENERC_KCAL" : 271.0,
+                "PROCNT" : 5.710000038146973,
+                "FAT" : 10.0,
+                "CHOCDF" : 41.43000030517578,
+                "FIBTG" : 2.9000000953674316
+              },
+              "brand" : "Star Markets Co.",
+              "category" : "Packaged foods",
+              "categoryLabel" : "food",
+              "foodContentsLabel" : "WATER; ORGANIC WHOLE WHEAT FLOUR; ORGANIC ENRICHED WHEAT FLOUR (ORGANIC WHEAT FLOUR; NIACIN; REDUCED IRON; THIAMIN MONONITRATE [VITAMIN B1]; RIBOFLAVIN [VITAMIN B2]; FOLIC ACID); ORGANIC VEGETABLE OIL (ORGANIC CANOLA OIL AND/OR ORGANIC SOYBEAN OIL); ORGANIC BLUEBERRY FLAVORED NUGGETS (ORGANIC POWDERED SUGAR; ORGANIC CORN FLOUR; ORGANIC PALM OIL; VEGETABLE EXTRACTS [PURPLE CARROT; RED CABBAGE (FOR COLOR)]; ORGANIC NATURAL FLAVOR; ORGANIC BLUEBERRY POWDER); ORGANIC CANE SUGAR; CONTAINS 2% OR LESS OF: LEAVENING (SODIUM ACID PYROPHOSPHATE; SODIUM BICARBONATE); ORGANIC SOY LECITHIN; ORGANIC WHEAT BRAN; ORGANIC PEAR JUICE CONCENTRATE; ORGANIC SKIM MILK; NATURAL FLAVOR; SEA SALT; ORGANIC EGGS.",
+              "servingSizes" : [ {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                "label" : "Gram",
+                "quantity" : 70.0
+              }, {
+                "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+                "label" : "Waffle",
+                "quantity" : 2.0
+              } ],
+              "servingsPerContainer" : 3.0
+            },
+            "measures" : [ {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              "label" : "Serving",
+              "weight" : 70.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_waffle",
+              "label" : "Waffle",
+              "weight" : 35.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_package",
+              "label" : "Package",
+              "weight" : 210.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              "label" : "Gram",
+              "weight" : 1.0
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              "label" : "Ounce",
+              "weight" : 28.349523125
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              "label" : "Pound",
+              "weight" : 453.59237
+            }, {
+              "uri" : "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              "label" : "Kilogram",
+              "weight" : 1000.0
+            } ]
+          } ],
+          "_links" : {
+            "next" : {
+              "title" : "Next page",
+              "href" : "https://api.edamam.com/api/food-database/v2/parser?session=42&app_id=Private API key&app_key=Private API key&ingr=blueberry"
+            }
+          }
+        }
+  recorded_at: Sun, 07 Nov 2021 00:08:20 GMT
+recorded_with: VCR 6.0.0
