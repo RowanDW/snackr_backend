@@ -4,9 +4,14 @@ class FoodEntry < ApplicationRecord
 
 
   def self.foods_with_rank(current_user)
-    joins(meal: :user)
-    .select("food_entries.*, AVG(food_entries.meal.rank) as food_rank")
-    .where("meals.user_id = current_user.id")
-    .group("food_entries.food_id")
-  end
+      raw_food = FoodEntry.joins(meal: :user)
+      .select("food_entries.*, meals.rank")
+      .where("meals.user_id = ?", current_user.id)
+
+      result = select("food_name, food_id, AVG(rank) as average_rank")
+          .from(raw_food, :raw_food)
+          .group(:food_id, :food_name)
+          .order(average_rank: :desc)
+
+    end
 end
