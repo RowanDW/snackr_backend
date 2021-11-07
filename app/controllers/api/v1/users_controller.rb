@@ -10,8 +10,12 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def meals
-    user = User.find(params[:id])
-    meals = user.get_meals(params[:date])
-    render json: MealSerializer.new(meals), status: 200
+    if User.exists?(params[:id])
+      user = User.find(params[:id])
+      meals = user.get_meals(params[:date])
+      render json: MealSerializer.new(meals), status: 200
+    else
+      render json: {error: "not found"}, status: 404
+    end
   end
 end
