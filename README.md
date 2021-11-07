@@ -147,35 +147,6 @@ Example JSON Response:
 }
 ```
 
-#### Post a food for a user
-
-`POST /users/:id/foods`
-
-Requires the following JSON format:
-
-```
-{
-  "food_name": "Meatball,
-  "food_id": 18,
-  "meal_id": 12,
-}
-```
-
-Example JSON response:
-
-```
-{
-  "data": {
-    "id": "52",
-    "type": "food_entry",
-    "attributes": {
-      "food_name": "Meatball",
-      "food_id": 18,
-      "meal_id": 12
-    }
-  }
-}
-```
 
 #### Update a user's meal rank
 
