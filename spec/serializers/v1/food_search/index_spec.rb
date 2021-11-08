@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "food search index endpoint", :vcr do
   it 'returns foods from search if a food search param is given' do
-    get '/api/v1/foods/search', params: { food_search: "blueberry" }
+    get '/api/v1/foods/search', params: { query: "blueberry" }
 
     expect(response).to be_successful
     expect(response.status).to eq(200)
