@@ -1,5 +1,5 @@
 class MealSerializer
-  def self.new(meals)
+  def self.get_meals(meals)
     {
       "data": meals.map do |meal|
         {
@@ -24,6 +24,20 @@ class MealSerializer
           }
         }
     end
+    }
+  end
+
+  def self.one_meal(meal)
+    {
+      "data": {
+        "id": meal.id,
+        "type": "meal",
+        "attributes": {
+          "name": meal.name,
+          "rank": meal.rank,
+          "meal_time": meal.meal_time
+        }
+      }
     }
   end
 end
