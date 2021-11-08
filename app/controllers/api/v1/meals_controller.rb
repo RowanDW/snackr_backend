@@ -10,15 +10,18 @@ class Api::V1::MealsController < ApplicationController
   end
 
   def create
-    user = User.find(params[:id])
-    meal_name = params[:data][:attributes][:name]
-    meal_time = params[:data][:attributes][:meal_time]
-    meal = user.meals.new(name: meal_name, meal_time: meal_time)
-    if meal.save
-      # good job
-      meal.add_foods(params[:data][:attributes][:foods])
+    if User.exists?(params[:id])
+      user = User.find(params[:id])
+      meal = user.meals.new(meal_params)
+      if meal.save
+        meal.add_foods(foods_params)
+        render json: MealSerializer.one_full_meal(meal), status: 200
+      else
+        # not sure how we would get here.
+        render json: {error: "can't create meal"}, status: 400
+      end
     else
-      #error
+      render json: {error: "not found"}, status: 404
     end
   end
 
@@ -29,6 +32,24 @@ class Api::V1::MealsController < ApplicationController
       render json: MealSerializer.one_meal(meal), status: 200
     else
       render json: {error: "not found"}, status: 404
+    end
+  end
+
+  private
+
+  def meal_params
+    {
+      name: params[:data][:attributes][:name],
+      meal_time: params[:data][:attributes][:meal_time]
+    }
+  end
+
+  def foods_params
+    params[:data][:attributes][:foods].map do |food|
+      {
+        food_name: food[:name],
+        food_id:   food[:food_id],
+      }
     end
   end
 end
