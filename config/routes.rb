@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       get '/foods/search', to: 'food_search#index'
       get '/users', to: 'users#login'
       get '/users/:id/meals', to: 'meals#meals'
+      post '/users/:id/meals', to: 'meals#create'
       patch '/users/:id/meals', to: 'meals#update'
       get '/users/:id/foods', to: 'food_entries#index'
     end

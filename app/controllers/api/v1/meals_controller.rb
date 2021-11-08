@@ -9,6 +9,19 @@ class Api::V1::MealsController < ApplicationController
     end
   end
 
+  def create
+    user = User.find(params[:id])
+    meal_name = params[:data][:attributes][:name]
+    meal_time = params[:data][:attributes][:meal_time]
+    meal = user.meals.new(name: meal_name, meal_time: meal_time)
+    if meal.save
+      # good job
+      meal.add_foods(params[:data][:attributes][:foods])
+    else
+      #error
+    end
+  end
+
   def update
     if Meal.exists?(params[:meal_id])
       meal = Meal.find(params[:meal_id])
