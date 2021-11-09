@@ -47,7 +47,7 @@ class Api::V1::MealsController < ApplicationController
   def foods_params
     params[:data][:attributes][:foods].map do |food|
       {
-        food_name: food[:name],
+        food_name: food[:food_name],
         food_id:   food[:food_id],
       }
     end
