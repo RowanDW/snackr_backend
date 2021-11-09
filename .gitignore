@@ -30,3 +30,4 @@
 /config/application.yml
 
 /spec/fixtures/vcr_cassettes/*
+/spec/fixtures/vcr_cassettes/
