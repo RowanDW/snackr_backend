@@ -31,6 +31,7 @@ RSpec.describe Graph do
     @food_entry19 = FoodEntry.create!(meal_id: @meal5.id, food_id: "19", food_name: "chickpeas")
     @food_entry20 = FoodEntry.create!(meal_id: @meal5.id, food_id: "20", food_name: "lentils")
   end
+
   it '#ten_highest_ranked' do
     graph = Graph.ten_highest_ranked(@user)
     name_params = "chdl=zucchini|lentils|chickpeas|hummus|mango|apricot|macaroni|rice|pizza|apple"
@@ -41,6 +42,7 @@ RSpec.describe Graph do
     expect(graph.uri.include?(name_params)).to eq(true)
     expect(graph.uri.include?(rank_params)).to eq(true)
   end
+
   it '#ten_lowest_ranked' do
     graph = Graph.ten_lowest_ranked(@user)
     name_params = "chdl=blueberry|couscous|pop tart|broccoli|banana peppers|naan bread|spaghetti|bagel|pizza|apple"
