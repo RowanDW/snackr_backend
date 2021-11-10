@@ -1,15 +1,6 @@
 class Graph
-  BASE_URI = "https://image-charts.com/chart?"
-                                    +"chbh=a"
-                                    +"&chs=700x150"
-                                    +"&cht=bhg"
-                                    +"&chxt=y"
-                                    +"&chds=0,120"
-                                    +"&chco=fdb45c,27c9c2,1869b7"
-                                    +"&chbr=5"
-                                    +"&chxs=0,000000,0,0,_"
-                                    +"&chm=N,000000,0,,10|N,000000,1,,10|N,000000,2,,10"
-                                    +"&chma=0,0,10,10"
+  BASE_URI = "https://image-charts.com/chart?chbh=a&chs=700x150&cht=bhg&chxt=y&chds=0,120&chco=fdb45c,27c9c2,1869b7&chbr=5&chxs=0,000000,0,0,_&chm=N,000000,0,,10|N,000000,1,,10|N,000000,2,,10&chma=0,0,10,10"
+
   attr_reader :name, :uri
 
   def initialize(name, uri)
