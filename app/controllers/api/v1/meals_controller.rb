@@ -3,25 +3,20 @@ class Api::V1::MealsController < ApplicationController
     if User.exists?(params[:id])
       user = User.find(params[:id])
       meals = user.get_meals(params[:date])
-      render json: MealSerializer.get_meals(meals), status: 200
+      render json: MealSerializer.get_meals(meals), status: :ok
     else
-      render json: {error: "not found"}, status: 404
+      render json: { error: 'not found' }, status: :not_found
     end
   end
 
   def create
     if User.exists?(params[:id])
       user = User.find(params[:id])
-      meal = user.meals.new(meal_params)
-      if meal.save
-        meal.add_foods(foods_params)
-        render json: MealSerializer.one_full_meal(meal), status: 200
-      else
-        # not sure how we would get here.
-        render json: {error: "can't create meal"}, status: 400
-      end
+      meal = user.meals.create(meal_params)
+      meal.add_foods(foods_params)
+      render json: MealSerializer.one_full_meal(meal), status: :ok
     else
-      render json: {error: "not found"}, status: 404
+      render json: { error: 'not found' }, status: :not_found
     end
   end
 
@@ -29,9 +24,9 @@ class Api::V1::MealsController < ApplicationController
     if Meal.exists?(params[:meal_id])
       meal = Meal.find(params[:meal_id])
       meal.update(rank: params[:rank])
-      render json: MealSerializer.one_meal(meal), status: 200
+      render json: MealSerializer.one_meal(meal), status: :ok
     else
-      render json: {error: "not found"}, status: 404
+      render json: { error: 'not found' }, status: :not_found
     end
   end
 
@@ -48,7 +43,7 @@ class Api::V1::MealsController < ApplicationController
     params[:data][:attributes][:foods].map do |food|
       {
         food_name: food[:food_name],
-        food_id:   food[:food_id],
+        food_id: food[:food_id]
       }
     end
   end

@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :meals
+  has_many :meals, dependent: :destroy
   has_many :food_entries, through: :meals
 
   def get_meals(date)

@@ -3,17 +3,17 @@ class GraphSerializer
     {
       "data": [
         {
-          "type": "graph",
+          "type": 'graph',
           "attributes": {
-            "name": "#{highest.name}",
-            "uri": "#{highest.uri}"
+            "name": highest.name.to_s,
+            "uri": highest.uri.to_s
           }
         },
         {
-          "type": "graph",
+          "type": 'graph',
           "attributes": {
-            "name": "#{lowest.name}",
-            "uri": "#{lowest.uri}"
+            "name": lowest.name.to_s,
+            "uri": lowest.uri.to_s
           }
         }
       ]

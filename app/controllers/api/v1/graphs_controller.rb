@@ -6,7 +6,7 @@ class Api::V1::GraphsController < ApplicationController
       lowest = Graph.ten_lowest_ranked(user)
       render json: GraphSerializer.get_graphs(highest, lowest)
     else
-      render json: {error: "not found"}, status: 404
+      render json: { error: 'not found' }, status: :not_found
     end
   end
 end
