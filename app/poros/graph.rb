@@ -1,5 +1,5 @@
 class Graph
-  BASE_URI = "https://image-charts.com/chart?chbh=a&chs=700x150&cht=bhg&chxt=y&chds=0,120&chco=005689,007cb9,ff895d&chbr=5&chxs=0,000000,0,0,_&chm=N,000000,0,,10|N,000000,1,,10|N,000000,2,,10&chma=0,0,10,10"
+  BASE_URI = "https://image-charts.com/chart?chbh=a&chs=700x150&cht=bhg&chxt=y&chds=0,120&chco=005689,007cb9,ff895d&chbr=5&chxs=0,000000,0,0,_&chm=N,FFFFFF,0,,10|N,FFFFFF,1,,10|N,FFFFFF,2,,10|N,FFFFFF,3,,10|N,FFFFFF,4,,10|N,FFFFFF,5,,10|N,FFFFFF,6,,10|N,FFFFFF,7,,10|N,FFFFFF,8,,10|N,FFFFFF,9,,10&chma=0,0,10,10"
 
   attr_reader :name, :uri
 
