@@ -4,5 +4,6 @@ class User < ApplicationRecord
 
   def get_meals(date)
     meals.where(meal_time: date.to_datetime.beginning_of_day..date.to_date.end_of_day)
+         .order(:meal_time)
   end
 end
