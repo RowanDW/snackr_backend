@@ -41,7 +41,6 @@ RSpec.describe Graph do
     expect(graph.name).to eq("10_Highest")
     expect(graph.uri.include?(name_params)).to eq(true)
     expect(graph.uri.include?(rank_params)).to eq(true)
-    require "pry"; binding.pry
   end
 
   it '#ten_lowest_ranked' do
