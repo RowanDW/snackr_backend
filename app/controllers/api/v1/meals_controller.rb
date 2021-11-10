@@ -12,14 +12,9 @@ class Api::V1::MealsController < ApplicationController
   def create
     if User.exists?(params[:id])
       user = User.find(params[:id])
-      meal = user.meals.new(meal_params)
-      if meal.save
-        meal.add_foods(foods_params)
-        render json: MealSerializer.one_full_meal(meal), status: 200
-      else
-        # not sure how we would get here.
-        render json: {error: "can't create meal"}, status: 400
-      end
+      meal = user.meals.create(meal_params)
+      meal.add_foods(foods_params)
+      render json: MealSerializer.one_full_meal(meal), status: 200
     else
       render json: {error: "not found"}, status: 404
     end
