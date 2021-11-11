@@ -18,7 +18,7 @@ UNDER CONSTRUCTION. Note that the following is an expected list.
 
 #### Get meals for a user by date
 
-`GET /users/:id/meals=date<DATE IN DATETIME>`
+`GET /users/:id/meals?date=<DATE IN DATETIME>`
 
 Example JSON response:
 
