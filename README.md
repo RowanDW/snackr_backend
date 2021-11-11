@@ -40,13 +40,13 @@ Example JSON response:
                 "id": 1,
                 "meal_id": 1,
                 "food_id": 12345
-                "name": "bread"
+                "food_name": "bread"
               },
               {
                 "id": 2,
                 "meal_id": 1,
                 "food_id": 68762
-                "name": "avocado"
+                "food_name": "avocado"
               }
             ]
           }
@@ -61,21 +61,30 @@ Example JSON response:
 
 #### Get graphs for user
 
-Requires parameters for graph type.
-
 `GET /users/:id/graphs`
+
+Returns a list of graph uris.
 
 Example JSON response:
 
 ```
 {
-  "data": {
-    "id": "1",
-    "type": "graph_uri",
-    "attributes": {
-      "uri": "/chart?chs=09348iohsdfh"
+  "data": [
+    {
+      "type": 'graph',
+      "attributes": {
+        "name": "10_Highest",
+        "uri": "https://image-charts.com/chart?...."
+      }
+    },
+    {
+      "type": 'graph',
+      "attributes": {
+        "name": "10_Lowest",
+        "uri": "https://image-charts.com/chart?...."
+      }
     }
-  }
+  ]
 }
 ```
 
