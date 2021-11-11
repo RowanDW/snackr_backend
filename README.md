@@ -215,9 +215,7 @@ Response from BE:
 
 #### Search for a food
 
-`GET /foods/search`
-
-Requires requested food as a parameter: { food: <requested food> }
+`GET /foods/search?query=<QUERY>`
 
 
 Example JSON response:
@@ -243,22 +241,6 @@ Example JSON response:
 }
 ```
 
-
-#### Post a user
-
-Example JSON response:
-
-```
-{
-  data: {
-    'id' :  1,
-    'type': 'user',
-    'attributes': {
-      'name': "name"
-    }
-  }
-}
-```
 
 ### Schema
 ![Database schema](https://user-images.githubusercontent.com/826189/140441780-e5019ab9-3a19-47cc-ad20-f0d7437b27a3.png)
