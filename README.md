@@ -241,6 +241,34 @@ Example JSON response:
 }
 ```
 
+#### Login a user
+
+`GET /users`
+
+Requires the following JSON format:
+
+```
+{
+  email: <EMAIL>
+  name: <NAME>
+  access_token: <TOKEN>
+}
+```
+
+Example JSON response:
+
+```
+{
+  "data": {
+    "id": "1",
+    "type": "user",
+    "attributes": {
+      "name": "Donald Duck"
+    }
+  }
+}
+```
+
 
 ### Schema
 ![Database schema](https://user-images.githubusercontent.com/826189/140441780-e5019ab9-3a19-47cc-ad20-f0d7437b27a3.png)
