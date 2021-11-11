@@ -280,34 +280,33 @@ Example JSON response:
 - Rails 5.2.5
 
 #### Development
-![Atom][atom-badge]
-![Figaro][figaro-badge]
+![Ruby on Rails][ruby-on-rails-badge]
+![Bootstrap][bootstrap-badge]
 ![Git][git-badge]
-![GitHub][github-badge]
-![Markdown][markdown-badge]  
-![PostgreSQL][postgreSQL-badge]   
+![Atom][atom-badge]
+![Faraday][faraday-badge]
+![Figaro][figaro-badge]
 ![Postico][postico-badge]
 ![Postman][postman-badge]
 ![Rubocop][rubocop-badge]
-![Ruby on Rails][ruby-on-rails-badge]
 
 #### Languages
-![ActiveRecord][activerecord-badge]
 ![Ruby][ruby-badge]
+![ActiveRecord][activerecord-badge]
 
 #### Deployment
 ![Heroku][heroku-badge]
 ![Travis CI][travis-ci-badge]
-![Faraday][faraday-badge]
 
 #### Testing
-![Capybara][capybara-badge]
-![Pry][pry-badge]
 ![RSpec][rspec-badge]
-![Shoulda Matchers][shoulda-matchers-badge]
 ![Simplecov][simplecov-badge]
 ![VCR][vcr-badge]
 ![Webmock][webmock-badge]
+![Pry][pry-badge]
+![Capybara][capybara-badge]
+![Launchy][launchy-badge]
+![Shoulda Matchers][shoulda-matchers-badge]
 
 #### Development Principles
 ![OOP][oop-badge]
@@ -342,14 +341,14 @@ Example JSON response:
 [github-badge]:           https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
 
 [atom-badge]:             https://img.shields.io/badge/Atom-66595C.svg?&style=flaste&logo=atom&logoColor=white
-[bootstrap-badge]:        https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[bootstrap-badge]:        https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white
 [figaro-badge]:           https://img.shields.io/badge/figaro-b81818.svg?&style=flaste&logo=rubygems&logoColor=white
 [git-badge]:              https://img.shields.io/badge/Git-F05032.svg?&style=flaste&logo=git&logoColor=white
 [github-badge]:           https://img.shields.io/badge/GitHub-181717.svg?&style=flaste&logo=github&logoColor=white
-[markdown-badge]:         https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white
+[markdown-badge]:         https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white
 [postgreSQL-badge]:       https://img.shields.io/badge/PostgreSQL-4169E1.svg?&style=flaste&logo=postgresql&logoColor=white
 [postico-badge]:          https://img.shields.io/badge/postico-b81818.svg?&style=flaste&logo=rubygems&logoColor=white
-[postman-badge]:          https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white
+[postman-badge]:          https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=Postman&logoColor=white
 [rubocop-badge]:          https://img.shields.io/badge/rubocop-b81818.svg?&style=flaste&logo=rubygems&logoColor=white
 [ruby-on-rails-badge]:    https://img.shields.io/badge/Ruby%20On%20Rails-b81818.svg?&style=flat&logo=rubyonrails&logoColor=white
 
