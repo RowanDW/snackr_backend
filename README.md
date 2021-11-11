@@ -253,7 +253,6 @@ Example JSON response:
 
 #### Development
 ![Atom][atom-badge]
-![Bootstrap][bootstrap-badge]
 ![Figaro][figaro-badge]
 ![Git][git-badge]
 ![GitHub][github-badge]
@@ -266,8 +265,6 @@ Example JSON response:
 
 #### Languages
 ![ActiveRecord][activerecord-badge]
-![CSS3][css3-badge]
-![HTML5][html5-badge]
 ![Ruby][ruby-badge]
 
 #### Deployment
@@ -277,7 +274,6 @@ Example JSON response:
 
 #### Testing
 ![Capybara][capybara-badge]
-![Launchy][launchy-badge]
 ![Pry][pry-badge]
 ![RSpec][rspec-badge]
 ![Shoulda Matchers][shoulda-matchers-badge]
