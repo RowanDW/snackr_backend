@@ -132,9 +132,22 @@ Requires the following JSON format:
 
 ```
 {
-  "name": "Spaghetti",
-  "user_id": 18,
-  "meal_time": "2012-03-05, 00:00:00",
+  "data": {
+    "attributes": {
+      "name": "Spaghetti",
+      "meal_time": "2012-03-05, 00:00:00",
+      "foods": [
+        { 
+          "food_name": "pasta",
+          "food_id": 1234
+        },
+        {
+          "food_name": "sauce",
+          "food_id": 5678
+        }
+      ]
+    }
+  }
 }
 ```
 
@@ -149,6 +162,21 @@ Example JSON Response:
       "name": "Spaghetti",
       "meal_time": "2012-03-05, 00:00:00",
       "rank": -1
+    },
+    "relationships": {
+      "food_entries": {
+        "data": {
+          "id": 1
+          "meal_id": 12
+          "food_id": 1234
+          "food_name": "pasta"
+        },
+          "id": 1
+          "meal_id": 12
+          "food_id": 5678
+          "food_name": "sauce"
+        }
+      }
     }
   }
 }
