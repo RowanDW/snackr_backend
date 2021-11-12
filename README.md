@@ -16,8 +16,11 @@
 ### APIs
 
 The following are a list of APIs used:
+
 [Edamam](https://developer.edamam.com)
+
 [Image-Charts](https://www.image-charts.com)
+
 [Google OAuth2](https://developers.google.com/identity/protocols/oauth2)
 
 ### Endpoints
