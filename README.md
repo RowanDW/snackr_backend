@@ -4,6 +4,7 @@
 ## Table of contents
 - [Overview](#overview)
 - [Endpoints](#endpoints)
+- [APIs](#apis)
 - [Schema](#schema)
 - [Technologies](#technologies)
 - [Contributors](#contributors)
@@ -12,9 +13,14 @@
 
 [Snackr](https://snackr-trackr.herokuapp.com) is a food tracking app that rates users' experience after meals. The app is built using a service oriented architecture. For a more detailed explanation of the user experience, please visit our [frontend repo](https://github.com/RowanDW/snackr_frontend).
 
-### Endpoints
+### APIs
 
-UNDER CONSTRUCTION. Note that the following is an expected list.
+The following are a list of APIs used:
+[Edamam](https://developer.edamam.com)
+[Image-Charts](https://www.image-charts.com)
+[Google OAuth2](https://developers.google.com/identity/protocols/oauth2)
+
+### Endpoints
 
 #### Get meals for a user by date
 
